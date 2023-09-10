@@ -1,8 +1,11 @@
+# can sort in ascending order, descending order
+
 def findSmallest(array):
   minElement = array[0]
   minIndex = 0
   for i in range(1, len(array)):
     if array[i] < minElement:
+    # if array[i] > minElement:
       minElement = array[i]
       minIndex = i
   return minIndex
